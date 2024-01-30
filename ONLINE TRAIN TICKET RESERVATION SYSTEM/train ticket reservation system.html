@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Train Reservation System</title>
+    <link rel="stylesheet" href="train ticket reservation system.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#book-ticket">Book Ticket</a></li>
+            <li><a href="#check-pnr">Check PNR Status</a></li>
+            <li><a href="#cancel-ticket">Cancel Ticket</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Login Section -->
+        <section id="login" class="section">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+
+        <!-- Book Ticket Section -->
+        <section id="book-ticket" class="section">
+            <h2>Book Ticket</h2>
+            <form action="/book-ticket" method="post">
+                <label for="journey-date">Journey Date:</label><br>
+                <input type="date" id="journey-date" name="journey-date"><br>
+                <label for="passenger-names">Passenger Names:</label><br>
+                <input type="text" id="passenger-names" name="passenger-names"><br>
+                <label for="origin-station">Origin Station:</label><br>
+                <input type="text" id="origin-station" name="origin-station"><br>
+                <label for="destination-station">Destination Station:</label><br>
+                <input type="text" id="destination-station" name="destination-station"><br>
+                <label for="class-type">Class Type:</label><br>
+                <select id="class-type" name="class-type">
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first-class">First Class</option>
+                </select><br><br>
+                <input type="submit" value="Book Ticket">
+            </form>
+        </section>
+
+        <!-- Check PNR Status Section -->
+        <section id="check-pnr" class="section">
+            <h2>Check PNR Status</h2>
+            <form action="/check-pnr" method="post">
+                <label for="pnr-number">PNR Number:</label><br>
+                <input type="text" id="pnr-number" name="pnr-number"><br><br>
+                <input type="submit" value="Check PNR">
+            </form>
+        </section>
+
+        <!-- Cancel Ticket Section -->
+        <section id="cancel-ticket" class="section">
+            <h2>Cancel Ticket</h2>
+            <form action="/cancel-ticket" method="post">
+                <label for="pnr-number-cancel">PNR Number:</label><br>
+                <input type="text" id="pnr-number-cancel" name="pnr-number-cancel"><br><br>
+                <input type="submit" value="Cancel Ticket">
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Train Reservation System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
