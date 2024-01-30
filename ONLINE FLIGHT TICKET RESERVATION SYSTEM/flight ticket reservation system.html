@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Flight Reservation System</title>
+    <link rel="stylesheet" href="flight ticket reservation system.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#admin-login">Admin Login</a></li>
+            <li><a href="#forgot-password">Forgot Password</a></li>
+            <li><a href="#search-flight">Search Flight</a></li>
+            <li><a href="#book-ticket">Book Ticket</a></li>
+            <li><a href="#ticket-payment">Ticket Payment</a></li>
+            <li><a href="#my-ticket">My Ticket</a></li>
+            <li><a href="#cancel-ticket">Cancel Ticket</a></li>
+            <li><a href="#customer-feedback">Customer Feedback</a></li>
+            <li><a href="#admin-report">Admin Report</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Admin Login Page -->
+        <section id="admin-login" class="section">
+            <h2>Admin Login</h2>
+            <form action="/admin-login" method="post">
+                <label for="admin-username">Username:</label><br>
+                <input type="text" id="admin-username" name="admin-username"><br>
+                <label for="admin-password">Password:</label><br>
+                <input type="password" id="admin-password" name="admin-password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+
+        <!-- Forgot Password Page -->
+        <section id="forgot-password" class="section">
+            <h2>Forgot Password</h2>
+            <form action="/forgot-password" method="post">
+                <label for="forgot-email">Email:</label><br>
+                <input type="email" id="forgot-email" name="forgot-email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Search Flight Page -->
+        <section id="search-flight" class="section">
+            <h2>Search Flight</h2>
+            <form action="/search-flight" method="post">
+                <!-- Search flight form goes here -->
+                <p>Placeholder for search flight form</p>
+            </form>
+        </section>
+
+        <!-- Book Ticket Page -->
+        <section id="book-ticket" class="section">
+            <h2>Book Ticket</h2>
+            <form action="/book-ticket" method="post">
+                <!-- Book ticket form goes here -->
+                <p>Placeholder for book ticket form</p>
+            </form>
+        </section>
+
+        <!-- Ticket Payment Page -->
+        <section id="ticket-payment" class="section">
+            <h2>Ticket Payment</h2>
+            <form action="/ticket-payment" method="post">
+                <!-- Ticket payment form goes here -->
+                <p>Placeholder for ticket payment form</p>
+            </form>
+        </section>
+
+        <!-- My Ticket Page -->
+        <section id="my-ticket" class="section">
+            <h2>My Ticket</h2>
+            <!-- Display booked tickets here -->
+            <p>Placeholder for my ticket details</p>
+        </section>
+
+        <!-- Cancel Ticket Page -->
+        <section id="cancel-ticket" class="section">
+            <h2>Cancel Ticket</h2>
+            <form action="/cancel-ticket" method="post">
+                <!-- Cancel ticket form goes here -->
+                <p>Placeholder for cancel ticket form</p>
+            </form>
+        </section>
+
+        <!-- Customer Feedback Page -->
+        <section id="customer-feedback" class="section">
+            <h2>Customer Feedback</h2>
+            <form action="/customer-feedback" method="post">
+                <!-- Feedback form goes here -->
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br>
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </section>
+
+        <!-- Admin Report Page -->
+        <section id="admin-report" class="section">
+            <h2>Admin Report</h2>
+            <!-- Display admin report here -->
+            <p>Placeholder for admin report details</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Flight Reservation System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
