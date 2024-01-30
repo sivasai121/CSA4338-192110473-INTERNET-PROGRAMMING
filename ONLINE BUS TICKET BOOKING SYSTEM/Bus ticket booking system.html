@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Ticket Booking System</title>
+    <link rel="stylesheet" href="Bus ticket booking system.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#book-ticket">Book Ticket</a></li>
+            <li><a href="#update-bus">Update Bus Information</a></li>
+            <li><a href="#cancel-booking">Cancel Booking Ticket</a></li>
+            <li><a href="#comments">Comments</a></li>
+            <li><a href="#report-generation">Report Generation</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Login Section -->
+        <section id="login" class="section">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration" class="section">
+            <h2>Registration</h2>
+            <form action="/register" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <!-- Book Ticket Section -->
+        <section id="book-ticket" class="section">
+            <h2>Book Ticket</h2>
+            <form action="/book-ticket" method="post">
+                <label for="source">Source:</label><br>
+                <input type="text" id="source" name="source"><br>
+                <label for="destination">Destination:</label><br>
+                <input type="text" id="destination" name="destination"><br>
+                <label for="date">Date:</label><br>
+                <input type="date" id="date" name="date"><br><br>
+                <input type="submit" value="Book Ticket">
+            </form>
+        </section>
+
+        <!-- Update Bus Information Section -->
+        <section id="update-bus" class="section">
+            <h2>Update Bus Information</h2>
+            <form action="/update-bus" method="post">
+                <label for="bus-id">Bus ID:</label><br>
+                <input type="text" id="bus-id" name="bus-id"><br>
+                <label for="bus-type">Bus Type:</label><br>
+                <input type="text" id="bus-type" name="bus-type"><br>
+                <label for="bus-description">Description:</label><br>
+                <textarea id="bus-description" name="bus-description" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Update Bus">
+            </form>
+        </section>
+
+        <!-- Cancel Booking Ticket Section -->
+        <section id="cancel-booking" class="section">
+            <h2>Cancel Booking Ticket</h2>
+            <form action="/cancel-booking" method="post">
+                <label for="booking-id">Booking ID:</label><br>
+                <input type="text" id="booking-id" name="booking-id"><br><br>
+                <input type="submit" value="Cancel Booking">
+            </form>
+        </section>
+
+        <!-- Comments Section -->
+        <section id="comments" class="section">
+            <h2>Comments</h2>
+            <!-- Form to post comments goes here -->
+            <form action="/post-comment" method="post">
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Write your comment here..."></textarea><br>
+                <input type="submit" value="Post Comment">
+            </form>
+            <!-- Display comments here -->
+            <div class="comments">
+                <p>User1: This is a great bus service!</p>
+                <p>User2: I had a comfortable journey with this bus company.</p>
+            </div>
+        </section>
+
+        <!-- Report Generation Section -->
+        <section id="report-generation" class="section">
+            <h2>Report Generation</h2>
+            <!-- Report generation form goes here -->
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Bus Ticket Booking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
