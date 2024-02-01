@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="online complaint and registration.css">
+    <title>Online Complaint Registration and Management System</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>Online Complaint Registration and Management System</h1>
+    </header>
+
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- User Login Form -->
+        <form id="user-login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        
+        <!-- User Register Form -->
+        <form id="user-register-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        
+        <!-- Post Complaint Form -->
+        <form id="post-complaint-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location"><br>
+            <!-- Google Map integration can be added here -->
+            <button type="submit">Submit Complaint</button>
+        </form>
+
+        <!-- Complaint Status -->
+        <div id="complaint-status">
+            <!-- Display complaint status here -->
+        </div>
+
+        <!-- Feedback Form -->
+        <form id="feedback-form">
+            <label for="feedback-message">Feedback:</label>
+            <textarea id="feedback-message" name="feedback-message" required></textarea><br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Admin Contact Details -->
+        <div id="admin-contact-details">
+            <!-- Display admin contact details here -->
+        </div>
+    </section>
+
+    <!-- Officer Section -->
+    <section id="officer-section">
+        <h2>Officer</h2>
+        <!-- Officer Register Form -->
+        <form id="officer-register-form">
+            <label for="officer-username">Username:</label>
+            <input type="text" id="officer-username" name="officer-username" required><br>
+            <label for="officer-email">Email:</label>
+            <input type="email" id="officer-email" name="officer-email" required><br>
+            <label for="officer-password">Password:</label>
+            <input type="password" id="officer-password" name="officer-password" required><br>
+            <label for="officer-confirm-password">Confirm Password:</label>
+            <input type="password" id="officer-confirm-password" name="officer-confirm-password" required><br>
+            <label for="officer-department">Department:</label>
+            <input type="text" id="officer-department" name="officer-department" required><br>
+            <label for="officer-designation">Designation:</label>
+            <input type="text" id="officer-designation" name="officer-designation" required><br>
+            <button type="submit">Register Officer</button>
+        </form>
+        
+        <!-- Officer Login Form -->
+        <form id="officer-login-form">
+            <label for="officer-username">Username:</label>
+            <input type="text" id="officer-username" name="officer-username" required><br>
+            <label for="officer-password">Password:</label>
+            <input type="password" id="officer-password" name="officer-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        
+        <!-- View Complaints -->
+        <div id="view-complaints">
+            <!-- Display complaints assigned to officer -->
+        </div>
+
+        <!-- Update Status Form -->
+        <form id="update-status-form">
+            <label for="complaint-id">Complaint ID:</label>
+            <input type="text" id="complaint-id" name="complaint-id" required><br>
+            <label for="new-status">New Status:</label>
+            <input type="text" id="new-status" name="new-status" required><br>
+            <button type="submit">Update Status</button>
+        </form>
+
+        <!-- Update Proof Form -->
+        <form id="update-proof-form">
+            <label for="complaint-id-proof">Complaint ID:</label>
+            <input type="text" id="complaint-id-proof" name="complaint-id-proof" required><br>
+            <label for="proof-file">Proof File:</label>
+            <input type="file" id="proof-file" name="proof-file" required><br>
+            <button type="submit">Update Proof</button>
+        </form>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Generate ID & Password Form -->
+        <form id="generate-id-password-form">
+            <label for="officer-username">Officer Username:</label>
+            <input type="text" id="officer-username" name="officer-username" required><br>
+            <label for="temporary-password">Temporary Password:</label>
+            <input type="password" id="temporary-password" name="temporary-password" required><br>
+            <button type="submit">Generate Credentials</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Complaint Registration and Management System</p>
+    </footer>
+</body>
+</html>
