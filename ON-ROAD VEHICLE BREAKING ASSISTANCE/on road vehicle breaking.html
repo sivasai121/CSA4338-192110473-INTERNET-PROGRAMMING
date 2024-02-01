@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="on road vehicle breaking.css">
+    <title>On-Road Vehicle Breakdown Assistance</title>
+    <!-- You can link additional stylesheets or scripts here -->
+</head>
+<body>
+    <header>
+        <h1>On-Road Vehicle Breakdown Assistance</h1>
+    </header>
 
+    <!-- User Section -->
+    <section id="user-section">
+        <h2>User</h2>
+        <!-- User Registration Form -->
+        <form id="user-registration-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name" required><br>
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required><br>
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- User Login Form -->
+        <form id="user-login-form">
+            <label for="user-username">Username:</label>
+            <input type="text" id="user-username" name="user-username" required><br>
+            <label for="user-password">Password:</label>
+            <input type="password" id="user-password" name="user-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Search Mechanic Details Form -->
+        <form id="search-mechanic-details-form">
+            <label for="search-location">Search Location:</label>
+            <input type="text" id="search-location" name="search-location" required><br>
+            <button type="submit">Search Mechanic Details</button>
+        </form>
+
+        <!-- View Google Geo Location -->
+        <button onclick="viewGeoLocation()">View Google Geo Location</button>
+
+        <!-- Post Feedback Form -->
+        <form id="post-feedback-form">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea><br>
+            <button type="submit">Post Feedback</button>
+        </form>
+
+        <!-- My Profile -->
+        <button onclick="viewProfile()">My Profile</button>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin-section">
+        <h2>Admin</h2>
+        <!-- Provide Approval Form -->
+        <form id="provide-approval-form">
+            <label for="approval">Provide Approval:</label>
+            <select id="approval" name="approval">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Mechanic Section -->
+    <section id="mechanic-section">
+        <h2>Mechanic</h2>
+        <!-- Mechanic Registration Form -->
+        <form id="mechanic-registration-form">
+            <label for="mechanic-name">Name:</label>
+            <input type="text" id="mechanic-name" name="mechanic-name" required><br>
+            <label for="mechanic-email">Email:</label>
+            <input type="email" id="mechanic-email" name="mechanic-email" required><br>
+            <label for="mechanic-username">Username:</label>
+            <input type="text" id="mechanic-username" name="mechanic-username" required><br>
+            <label for="mechanic-password">Password:</label>
+            <input type="password" id="mechanic-password" name="mechanic-password" required><br>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Mechanic Login Form -->
+        <form id="mechanic-login-form">
+            <label for="mechanic-username">Username:</label>
+            <input type="text" id="mechanic-username" name="mechanic-username" required><br>
+            <label for="mechanic-password">Password:</label>
+            <input type="password" id="mechanic-password" name="mechanic-password" required><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Post Business Form -->
+        <form id="post-business-form">
+            <label for="business-name">Business Name:</label>
+            <input type="text" id="business-name" name="business-name" required><br>
+            <label for="business-location">Location:</label>
+            <input type="text" id="business-location" name="business-location" required><br>
+            <button type="submit">Post Business</button>
+        </form>
+
+        <!-- Manage Business Form -->
+        <form id="manage-business-form">
+            <label for="business-name">Business Name:</label>
+            <input type="text" id="business-name" name="business-name" required><br>
+            <label for="business-location">Location:</label>
+            <input type="text" id="business-location" name="business-location" required><br>
+            <button type="submit">Manage Business</button>
+        </form>
+
+        <!-- View Feedback -->
+        <button onclick="viewFeedback()">View Feedback</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 On-Road Vehicle Breakdown Assistance</p>
+    </footer>
+</body>
+</html>
